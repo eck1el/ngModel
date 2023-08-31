@@ -1,0 +1,8 @@
+<input type="text" name="nombre" [(ngModel)]="nombre" placeholder="Nombre: "><br>
+<input type="number" name="edad" [(ngModel)]="edad" placeholder="Edad: "><br>
+
+<p *ngIf="(nombre!='' && edad>17)">Hola {{nombre}} si puedes ingresar aqui porque tienes mas de 18 años</p>
+<router-outlet>
+</router-outlet>
+
+<!---->
